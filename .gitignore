@@ -78,3 +78,9 @@
 /TwsPluginDemo/bin/res/drawable-xhdpi/*.png
 /TwsPluginDemo/bin/res/drawable-xxhdpi/*.png
 /TwsPluginDemo/bin/*.ap_
+/TwsPluginHelloWorld/bin/*.apk
+/TwsPluginHelloWorld/bin/*.dex
+/TwsPluginHelloWorld/bin/res/drawable-xhdpi/*.png
+/TwsPluginHelloWorld/bin/res/drawable-xxhdpi/*.png
+/TwsPluginHelloWorld/bin/res/drawable/*.png
+/TwsPluginHelloWorld/bin/*.ap_

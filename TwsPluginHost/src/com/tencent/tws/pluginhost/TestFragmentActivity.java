@@ -1,9 +1,9 @@
 package com.tencent.tws.pluginhost;
 
+import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -45,7 +45,7 @@ public class TestFragmentActivity extends FragmentActivity {
 			@SuppressWarnings("rawtypes")
 			Class clazz = PluginLoader.loadPluginFragmentClassById(classId);
 			Fragment fragment = (Fragment) clazz.newInstance();
-			FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+			FragmentTransaction ft = getFragmentManager().beginTransaction();
 			ft.replace(R.id.fragment_container, fragment).commit();
 		} catch (InstantiationException e) {
 			e.printStackTrace();

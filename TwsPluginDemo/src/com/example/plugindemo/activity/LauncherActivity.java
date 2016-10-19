@@ -303,17 +303,18 @@ public class LauncherActivity extends BaseActivity implements View.OnClickListen
 		f = getFilesDir();
 		TwsLog.d(TAG, f.getAbsoluteFile() + " exists:" + f.exists() + " canRead:" + f.canRead() + " canWrite:" + f.canWrite());
 
-		if (Build.VERSION.SDK_INT >= 21) {
-			f = getNoBackupFilesDir();
-			TwsLog.d(TAG, f.getAbsoluteFile() + " exists:" + f.exists() + " canRead:" + f.canRead() + " canWrite:" + f.canWrite());
-		}
+		// if (Build.VERSION.SDK_INT >= 21) {
+		// f = getNoBackupFilesDir();
+		// TwsLog.d(TAG, f.getAbsoluteFile() + " exists:" + f.exists() +
+		// " canRead:" + f.canRead() + " canWrite:" + f.canWrite());
+		// }
 
 		f = getCacheDir();
 		TwsLog.d(TAG, f.getAbsoluteFile() + " exists:" + f.exists() + " canRead:" + f.canRead() + " canWrite:" + f.canWrite());
 
-		if (Build.VERSION.SDK_INT >= 21) {
-			f = getCodeCacheDir();
-		}
+		// if (Build.VERSION.SDK_INT >= 21) {
+		// f = getCodeCacheDir();
+		// }
 		TwsLog.d(TAG, f.getAbsoluteFile() + " exists:" + f.exists() + " canRead:" + f.canRead() + " canWrite:" + f.canWrite());
 
 		SQLiteDatabase db = openOrCreateDatabase("ccc", 0, null);
