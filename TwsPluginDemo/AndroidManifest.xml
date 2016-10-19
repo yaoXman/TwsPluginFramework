@@ -18,7 +18,7 @@
  	<application 
  	    android:name="com.example.plugindemo.PluginTestApplication"
         android:label="@string/app_name"
-        android:theme="@style/PluginTheme2">
+        android:theme="@android:style/Theme.Light">
 
         <!-- uses-library作用是用来通知插件框架此插件依赖哪些其他插件 -->
         <uses-library android:name="com.example.plugindemobase" android:required="true" />
@@ -39,8 +39,7 @@
             android:value="com.example.plugindemo.PluginSharedService"
             android:label="com.tencent.tws.sharelib.ShareService" />
 
-        <activity android:name="com.example.plugindemo.activity.LauncherActivity"
-                  android:theme="@style/PluginTheme5">
+        <activity android:name="com.example.plugindemo.activity.LauncherActivity">
             <intent-filter>
                 <action
                     android:name="android.intent.action.MAIN" />
@@ -51,7 +50,6 @@
 
         <activity
             android:name="com.example.plugindemo.activity.PluginTestActivity"
-            android:theme="@style/PluginTheme3"
             android:screenOrientation="landscape">
             <intent-filter>
                 <action
@@ -76,7 +74,6 @@
         
         <activity
             android:name="com.example.plugindemo.activity.PluginNotInManifestActivity"
-            android:theme="@style/PluginTheme"
             android:launchMode="singleTop"
             android:immersive="true"
             android:uiOptions="splitActionBarWhenNarrow"
@@ -147,8 +144,7 @@
         </activity>
 
         <activity
-            android:name="com.example.plugindemo.activity.PluginTestTabActivity"
-            android:theme="@style/PluginTheme6">
+            android:name="com.example.plugindemo.activity.PluginTestTabActivity">
         </activity>
 
         <activity

@@ -16,14 +16,12 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/MyButton"
             android:text="测试插件style" />
 
         <Button
             android:id="@+id/plugin_test_btn1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/MyButton2"
             android:text="@string/hello_world1" />
 
         <Button
@@ -72,15 +70,6 @@
             android:layout_height="300dp"
             android:layout_alignParentBottom="true"
             android:background="@color/light_btn_normal_color" />
-
-        <com.example.plugindemo.view.PluginTestCustomAttrView
-            android:layout_width="fill_parent"
-            android:layout_height="300dp"
-            android:layout_alignParentBottom="true"
-            android:background="@color/light_btn_normal_color"
-            app:custarr_text="属性字符串"
-            app:custarr_text_color="@color/light_btn_normal_color"
-            app:custarr_text_color_size="18sp"/>
 
     </LinearLayout>
 

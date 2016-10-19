@@ -7,12 +7,12 @@ import java.io.IOException;
 
 import tws.component.log.TwsLog;
 import android.app.ActionBar;
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -22,10 +22,9 @@ import android.view.View;
 import com.example.plugindemo.R;
 import com.example.plugindemo.receiver.PluginTestReceiver2;
 import com.example.plugindemo.service.PluginTestService;
-import com.tws.plugin.sharelib.BaseActivity;
 import com.tws.plugin.sharelib.SharePOJO;
 
-public class LauncherActivity extends BaseActivity implements View.OnClickListener {
+public class LauncherActivity extends Activity implements View.OnClickListener {
 
 	private static final String TAG = "rick_Print:LauncherActivity";
 
