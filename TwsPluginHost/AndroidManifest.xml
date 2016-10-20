@@ -58,7 +58,7 @@
         android:name="com.tencent.tws.pluginhost.HostApplication"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/HostTheme" >
+        android:theme="@style/Theme.tws.Second" >
         <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

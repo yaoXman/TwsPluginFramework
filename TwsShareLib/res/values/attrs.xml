@@ -580,12 +580,6 @@
     <attr name="progressBarPadding" format="dimension"/>
     <!-- Specifies padding that should be applied to the left and right sides of
          system-provided items in the bar. -->
-    <attr name="itemPadding" format="dimension" />    
-
-    <declare-styleable name="CustomViewBounds">
-        <attr name="widthToheight" format="float" />
-    </declare-styleable>
-
-    <attr name="layoutbg" format="color|reference" />
+    <attr name="itemPadding" format="dimension" />
 
 </resources>

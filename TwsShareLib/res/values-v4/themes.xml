@@ -1903,5 +1903,11 @@
         <item name="textColor">@color/tws_button_textColor</item>
         <item name="disabled_textColor">@color/tws_button_disabled_textColor</item>
     </style>
-
+    <style name="twsProgressBarStyleLarge">
+　　       	<item name="android:indeterminateDrawable">@drawable/tws_common_progress_bar_bg</item>
+　　        	<item name="android:minWidth">12dp</item>
+　　        	<item name="android:maxWidth">48dp</item>
+　　        	<item name="android:minHeight">12dp</item>
+　　        	<item name="android:maxHeight">48dp</item>
+    </style>
 </resources>
