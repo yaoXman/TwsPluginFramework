@@ -1,9 +1,5 @@
 package com.tencent.tws.assistant.widget;
 
-import com.tencent.tws.assistant.animation.ease.QuadEaseIn;
-import com.tencent.tws.assistant.animation.ease.QuadEaseOut;
-import com.tencent.tws.assistant.utils.ThemeUtils;
-import com.tencent.tws.sharelib.R;
 import android.animation.Animator;
 import android.animation.Animator.AnimatorListener;
 import android.animation.ValueAnimator;
@@ -18,8 +14,9 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.LevelListDrawable;
 import android.text.TextUtils;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
+
+import com.tencent.tws.sharelib.R;
 
 
 public class SidebarHubbleView extends View {

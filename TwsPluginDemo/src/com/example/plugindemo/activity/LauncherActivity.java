@@ -73,6 +73,7 @@ public class LauncherActivity extends Activity implements View.OnClickListener {
 		findViewById(R.id.onClickPluginTestReceiver2).setOnClickListener(this);
 		findViewById(R.id.onClickPluginTestService).setOnClickListener(this);
 		findViewById(R.id.onClickPluginTestService2).setOnClickListener(this);
+		findViewById(R.id.host_sidebar).setOnClickListener(this);
 	}
 
 	private static void startFragmentInHostActivity(Context context, String targetId) {
@@ -137,7 +138,18 @@ public class LauncherActivity extends Activity implements View.OnClickListener {
 		case R.id.onClickPluginTestService2:
 			onClickPluginTestService2(v);
 			break;
+		case R.id.host_sidebar:
+			showHostWidget_SideBar(v);
+			break;
 		}
+	}
+
+	private void showHostWidget_SideBar(View v) {
+		Intent intent = new Intent();
+		intent.setClassName(this, SideBarActivity.class.getName());
+		intent.putExtra("testParam", "testParam");
+		intent.putExtra("paramVO", new SharePOJO("测试VO"));
+		startActivity(intent);
 	}
 
 	public void onClickHellowrld(View v) {
